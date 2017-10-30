@@ -1,0 +1,139 @@
+.type-coffee {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__list-item {
+		width: 25%;
+		margin: 0 0 30px 0;
+
+		&._espresso {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_espresso.svg');
+				}
+			}
+		}
+		&._double-espresso {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_double-espresso.svg');
+				}
+			}
+		}
+		&._short-macchiato {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_short-macchiato.svg');
+				}
+			}
+		}
+		&._cappuccino {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_cappuccino.svg');
+				}
+			}
+		}
+		&._cafelatte {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_cafélatte.svg');
+				}
+			}
+		}
+		&._mocha {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_mocha.svg');
+				}
+			}
+		}
+		&._piccololatte {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_piccololatte.svg');
+				}
+			}
+		}
+		&._americano {
+			label {
+				&:before {
+					content: '';
+					background-image: resolve('ic_americano.svg');
+				}
+			}
+		}
+
+		input[type="radio"] {
+			display: none;
+
+			&:checked ~ label {
+				&:after {
+					content: '';
+					transform: translate(-50%, 0) rotate(135deg);
+					opacity: 1;
+				}
+			}
+		}
+
+		label {
+			position: relative;
+			display: block;
+			padding: 140px 10px 0 10px;
+			text-align: center;
+
+			&:hover {
+				&:after {
+					content: '';
+					transform: translate(-50%, 0) rotate(135deg);
+					opacity: 1;
+				}
+			}
+
+			span {
+				display: block;
+				font: 18px/28px var(--fspBook);
+				color: black;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, 0);
+				display: block;
+				width: 120px;
+				height: 120px;
+				border-radius: 50%;
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: -15px;
+				left: 50%;
+				transform: translate(-50%, 0);
+				display: block;
+				opacity: 0;
+				width: 150px;
+				height: 150px;
+				background: resolve('coffee-circle.svg') center/100% no-repeat;
+				transition: 400ms;
+			}
+		}
+	}
+}

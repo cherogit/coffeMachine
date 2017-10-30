@@ -1,0 +1,22 @@
+@import "variables";
+
+@import "global/typography";
+@import "global/global";
+@import "global/btns";
+
+@import "blocks/nav.css";
+@import "blocks/index-page.css";
+@import "blocks/logo.css";
+@import "blocks/header.css";
+@import "blocks/social-block.css";
+@import "blocks/author-fields.css";
+@import "blocks/burger-btn.css";
+@import "blocks/type-coffee.css";
+@import "blocks/mug-size.css";
+@import "blocks/cream.css";
+@import "blocks/sugar.css";
+@import "blocks/topping.css";
+@import "blocks/counter.css";
+@import "blocks/order.css";
+@import "blocks/section.css";
+

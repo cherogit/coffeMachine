@@ -1,0 +1,32 @@
+.section {
+	&._order {
+		&.active {
+			.order__info-item {
+				&._cream {
+					opacity: 1;
+					transition-delay: 1200ms;
+				}
+
+				&._topping {
+					opacity: 1;
+					transition-delay: 1000ms;
+				}
+
+				&._sugar {
+					opacity: 1;
+					transition-delay: 800ms;
+				}
+
+				&._mug {
+					opacity: 1;
+					transition-delay: 600ms;
+				}
+
+				&._coffee {
+					opacity: 1;
+					transition-delay: 400ms;
+				}
+			}
+		}
+	}
+}

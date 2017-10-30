@@ -1,0 +1,63 @@
+/*Font-face name*/
+
+@font-face {
+  font-family: 'FedraSansPro-Bold';
+  src: resolve('FedraSansPro-Bold.eot');
+  src: resolve('FedraSansPro-Bold.woff2') format('woff2'),
+       resolve('FedraSansPro-Bold.woff') format('woff'),
+       resolve('FedraSansPro-Bold.ttf') format('truetype'),
+       resolve('FedraSansPro-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra-Sans-Std-Bold';
+  src: resolve('Fedra-Sans-Std-Bold.eot');
+  src: resolve('Fedra-Sans-Std-Bold.woff2') format('woff2'),
+       resolve('Fedra-Sans-Std-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSansStd-Bold';
+  src: resolve('FedraSansStd-Bold.woff') format('woff'),
+       resolve('FedraSansStd-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra-Sans-Pro-Normal-Italic';
+  src: resolve('Fedra-Sans-Pro-Normal-Italic.eot');
+  src: resolve('Fedra-Sans-Pro-Normal-Italic.woff2') format('woff2'),
+       resolve('Fedra-Sans-Pro-Normal-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSansPro-NormalItalic';
+  src: resolve('FedraSansPro-NormalItalic.woff') format('woff'),
+       resolve('FedraSansPro-NormalItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fedra-Sans-Pro-Book';
+  src: resolve('Fedra-Sans-Pro-Book.eot');
+  src: resolve('Fedra-Sans-Pro-Book.woff2') format('woff2'),
+       resolve('Fedra-Sans-Pro-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FedraSansPro-Book';
+  src: resolve('FedraSansPro-Book.woff') format('woff'),
+       resolve('FedraSansPro-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,41 @@
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateX(-150px);
+	width: 150px;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 19.5vh 0;
+	background: rgba(80, 50, 50, .41);
+	transition: 400ms;
+	z-index: 999;
+
+	&._active {
+		transform: translateX(0);
+	}
+
+	a {
+		display: block;
+		width: 120px;
+		margin: 0 0 10px 0;
+		border: 1px solid transparent;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font: 13px/28px var(--fspBook);
+		color: white;
+		transition: 400ms;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.active, &:hover {
+			border-color: white;
+		}
+	}
+}

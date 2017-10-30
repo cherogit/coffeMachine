@@ -1,0 +1,266 @@
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+
+		main.main
+			a.burger-btn(href="#")
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.53 14.65">
+					<g id="Layer_1">
+						<line class="cls-1" x1="10.85" y1="5.13" x2="3.68" y2="5.13" />
+						<line class="cls-1" x1="10.85" y1="9.52" x2="3.68" y2="9.52" />
+						<line class="cls-1" x1="10.85" y1="7.33" x2="3.68" y2="7.33" />
+						<path class="cls-2" d="M2.41,1.89a7.33,7.33,0,0,0,.11,11L4.06,12A5.74,5.74,0,0,1,4,2.67L2.41,1.89Zm2.65,12.4a7.32,7.32,0,0,0,9.42-5.42L13,7.93A5.73,5.73,0,0,1,5,12.55ZM14.53,6A7.33,7.33,0,0,0,4.92.41L4.87,2.14l.08,0A5.74,5.74,0,0,1,13,6.89L14.53,6Z" />
+					</g>
+				</svg>
+
+			nav#myMenu.navigation
+				.navigation__menu
+					a.active(href="#firstPage" data-menuanchor="firstPage") Главная
+					a(href="#secondPage" data-menuanchor="secondPage") Тип кофе
+					a(href="#thirdPage" data-menuanchor="thirdPage") Размер кружки
+					a(href="#fourthPage" data-menuanchor="fourthPage") Сахар
+					a(href="#fifthPage" data-menuanchor="fifthPage") Топпинг
+					a(href="#sixthPage" data-menuanchor="sixthPage") Сливки
+					a(href="#seventhPage" data-menuanchor="seventhPage") Заказ
+
+			form#fullpage.form
+				.section.active
+					.index-page
+						.index-page__wrapper.container
+							header.header
+								a.main-logo(href="/")
+									img(src="./assets/images/img/logo.svg", alt="")
+								.social-block
+									a.social-block__item._fb(href="#")
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.26 6.98">
+											<g>
+												<path class="cls-1" d="M2.15,2.09V1.53a.3.3,0,0,1,.31-.33h.78V0H2.16A1.36,1.36,0,0,0,.7,1.46v.63H0v1.4H.7V7H2.1V3.49h1l0-.55.08-.85Z" />
+											</g>
+										</svg>
+									a.social-block__item._vk(href="#")
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.63 4.47">
+											<g>
+												<path class="cls-1" d="M7.58.34A2.05,2.05,0,0,0,6.75.27a4.74,4.74,0,0,0-.82,0,5.1,5.1,0,0,0-.49.9c-.26.5-.58,1-.79,1s-.2-.82-.19-1.42c0-.4-.05-.52-.11-.56A2.37,2.37,0,0,0,3.83,0S2.68-.08,2.52.42c.22,0,.6,0,.45,1.5,0,.07-.18.71-.71-.15C2.12,1.56,1.61.27,1.43.27A4.06,4.06,0,0,0,0,.34c-.19.11.26,1,1,2.17a3.56,3.56,0,0,0,2.4,1.91,2.78,2.78,0,0,0,.94,0c.12-.06,0-.9.38-1,.18,0,.86.87,1.12,1a2.69,2.69,0,0,0,.86.08c.39,0,.82,0,.86-.23.09-.58-1.16-1.33-1.2-1.69s.46-.73.71-1.09S7.77.51,7.58.34Z" />
+											</g>
+										</svg>
+									a.social-block__item._inst(href="#")
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.39 7.39">
+											<g>
+												<path class="cls-1" d="M2.1.63A1.47,1.47,0,0,0,.63,2.1V5.29A1.47,1.47,0,0,0,2.1,6.76H5.29A1.47,1.47,0,0,0,6.76,5.29V2.1A1.47,1.47,0,0,0,5.29.63ZM5.29,7.39H2.1A2.11,2.11,0,0,1,0,5.29V2.1A2.11,2.11,0,0,1,2.1,0H5.29a2.11,2.11,0,0,1,2.1,2.1V5.29A2.11,2.11,0,0,1,5.29,7.39Z" />
+												<path class="cls-1" d="M3.7,2.44A1.26,1.26,0,1,0,5,3.7,1.26,1.26,0,0,0,3.7,2.44Zm0,3.15A1.89,1.89,0,1,1,5.59,3.7,1.89,1.89,0,0,1,3.7,5.59Z" />
+												<path class="cls-1" d="M6.12,1.7a.45.45,0,1,1-.45-.45A.45.45,0,0,1,6.12,1.7Z" />
+											</g>
+										</svg>
+							.author-fields
+								input(type="text" placeholder="Фамилия")
+								input(type="text" placeholder="Имя")
+							a.btn._order(href="#secondPage") Заказать кофе
+
+				.section
+					.type-coffee
+						.type-coffee__wrapper.container
+							h2.h2 Выберите тип кофе
+							.type-coffee__list
+								.type-coffee__list-item._espresso
+									input(id="type1" type="radio" name="type-coffee")
+									label(for="type1") 
+										span Espresso
+								.type-coffee__list-item._double-espresso
+									input(id="type2" type="radio" name="type-coffee")
+									label(for="type2") 
+										span Double Espresso
+								.type-coffee__list-item._short-macchiato
+									input(id="type3" type="radio" name="type-coffee")
+									label(for="type3") 
+										span Short Macchiato
+								.type-coffee__list-item._cappuccino
+									input(id="type4" type="radio" name="type-coffee")
+									label(for="type4") 
+										span Cappuccino 
+								.type-coffee__list-item._cafelatte
+									input(id="type5" type="radio" name="type-coffee")
+									label(for="type5") 
+										span Café Latte 
+								.type-coffee__list-item._mocha
+									input(id="type6" type="radio" name="type-coffee")
+									label(for="type6") 
+										span Mocha 
+								.type-coffee__list-item._piccololatte
+									input(id="type7" type="radio" name="type-coffee")
+									label(for="type7") 
+										span Piccolo Latte 
+								.type-coffee__list-item._americano
+									input(id="type8" type="radio" name="type-coffee")
+									label(for="type8") 
+										span Americano
+
+				.section
+					.mug-size
+						.mug-size__wrapper.container
+							h2.h2 Размер кружки кофе
+							.mug-size__list
+								.mug-size__list-item._small
+									input(id="mug-size1" type="radio" name="mug-size")
+									label(for="mug-size1") 
+										span Маленькая
+								.mug-size__list-item._standard
+									input(id="mug-size2" type="radio" name="mug-size")
+									label(for="mug-size2") 
+										span Стандартная
+								.mug-size__list-item._big
+									input(id="mug-size3" type="radio" name="mug-size")
+									label(for="mug-size3") 
+										span Большая
+
+				.section
+					.sugar
+						.sugar__wrapper.container
+							h2.h2._mb20 Сахар
+							h3.h3._mb100 Укажите количество сахара
+							.sugar__list
+								.sugar__list-item._without
+									input(id="sugar1" type="radio" name="sugar")
+									label(for="sugar1") 
+										span Без
+											br
+											| сахара
+								.sugar__list-item._half-spoon
+									input(id="sugar2" type="radio" name="sugar")
+									label(for="sugar2") 
+										span Пол ложки 
+											br
+											| сахара
+								.sugar__list-item._one-spoon
+									input(id="sugar3" type="radio" name="sugar")
+									label(for="sugar3") 
+										span Ложка 
+											br
+											| сахара
+								.sugar__list-item._one-half-spoon
+									input(id="sugar4" type="radio" name="sugar")
+									label(for="sugar4") 
+										span Полторы ложки 
+											br
+											| сахара
+								.sugar__list-item._two-spoon
+									input(id="sugar5" type="radio" name="sugar")
+									label(for="sugar5") 
+										span Две ложки 
+											br
+											| сахара
+				.section
+					.topping
+						.topping__wrapper.container
+							h2.h2._mb20 Топпинг
+							h3.h3 Выберите топпинг
+							.topping__list
+								.topping__list-item._vanilla
+									input(id="topping1" type="radio" name="topping")
+									label(for="topping1") 
+										span Ванильный
+								.topping__list-item._nut
+									input(id="topping2" type="radio" name="topping")
+									label(for="topping2") 
+										span Ореховый
+								.topping__list-item._coconut
+									input(id="topping3" type="radio" name="topping")
+									label(for="topping3") 
+										span Кокосовый
+								.topping__list-item._cherry
+									input(id="topping4" type="radio" name="topping")
+									label(for="topping4")
+										span Вишневый
+
+							h3.h3._mb0 Укажите количество топпинга
+							.topping__quantity
+								.topping__quantity-item._without
+									input(id="topping5" type="radio" name="topping")
+									label(for="topping5") 
+										span Без топпинга
+								.counter
+									a.counter__plus(href="#")
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.5 3.8" style="enable-background:new 0 0 5.5 3.8;" xml:space="preserve">
+											<g>
+												<path class="st0" d="M0.2,3.6C0.1,3.5,0,3.3,0,3.1C0,3,0,2.9,0.1,2.8c0-0.1,0.1-0.2,0.2-0.2l0,0L2.8,0l2.5,2.5l0,0 c0.1,0.1,0.1,0.2,0.2,0.2v0c0,0.1,0.1,0.2,0.1,0.3c0,0.2-0.1,0.4-0.2,0.5C5.2,3.7,5.2,3.7,5.1,3.8h0C5,3.8,4.9,3.8,4.8,3.8 c-0.2,0-0.4-0.1-0.5-0.2L3.1,2.5l0,0C3,2.4,2.9,2.3,2.8,2.3l0,0c-0.1,0-0.3,0-0.4,0.1h0l0,0v0L1.3,3.6l0,0C1.1,3.7,0.9,3.8,0.8,3.8 c-0.1,0-0.2,0-0.3-0.1h0C0.4,3.7,0.3,3.7,0.2,3.6z"/>
+											</g>
+										</svg>
+
+									input(type="text" value="13" name="counter" data-min="1" data-max="99")
+									a.counter__minus(href="#")
+										<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.52 3.82">
+											<g>
+												<path class="cls-1" d="M0.21,0.22A0.73,0.73,0,0,0,0,.75a0.74,0.74,0,0,0,.22.53h0L2.76,3.82,5.31,1.27h0A0.76,0.76,0,0,0,5.47,1h0A0.74,0.74,0,0,0,5.52.75,0.73,0.73,0,0,0,5.31.22,0.76,0.76,0,0,0,5.06.06h0A0.77,0.77,0,0,0,4.77,0a0.73,0.73,0,0,0-.52.22L3.12,1.36h0a0.5,0.5,0,0,1-.35.15h0a0.5,0.5,0,0,1-.35-0.15h0L1.27,0.22h0A0.73,0.73,0,0,0,.75,0,0.76,0.76,0,0,0,.46.06h0A0.76,0.76,0,0,0,.21.22Z" transform="translate(0 0)" />
+											</g>
+										</svg>
+
+
+				.section
+					.cream
+						.cream__wrapper.container
+							h2.h2._white._mb20 Сливки
+							h3.h3._white._mb100 Выберите количество сливок
+							.cream__list
+								.cream__list-item._without
+									input(id="cream1" type="radio" name="cream")
+									label(for="cream1") 
+										span Без сливок
+								.cream__list-item._one
+									input(id="cream2" type="radio" name="cream")
+									label(for="cream2") 
+										span Одна порция
+								.cream__list-item._two
+									input(id="cream3" type="radio" name="cream")
+									label(for="cream3") 
+										span Две порции
+				.section._order
+					.order
+						.container
+							.order__wrapper
+								.order__info
+									.order__info-list
+										.order__info-item._cream
+											span Одна порция 
+											| сливок
+										.order__info-item._topping
+											span Ванильный 
+											| топпинг
+										.order__info-item._sugar
+											span Ложка 
+											| сахара
+										.order__info-item._mug
+											span Стандартная 
+											| кружка
+										.order__info-item._coffee
+											span Short Macchiato
+								.order__queue
+									.order__queue-title Ваш номер в очереди:
+									span 13
+
+							.social-block
+								a.social-block__item._order-block._fb(href="#")
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.26 6.98">
+										<g>
+											<path class="cls-1" d="M2.15,2.09V1.53a.3.3,0,0,1,.31-.33h.78V0H2.16A1.36,1.36,0,0,0,.7,1.46v.63H0v1.4H.7V7H2.1V3.49h1l0-.55.08-.85Z" />
+										</g>
+									</svg>
+								a.social-block__item._order-block._vk(href="#")
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.63 4.47">
+										<g>
+											<path class="cls-1" d="M7.58.34A2.05,2.05,0,0,0,6.75.27a4.74,4.74,0,0,0-.82,0,5.1,5.1,0,0,0-.49.9c-.26.5-.58,1-.79,1s-.2-.82-.19-1.42c0-.4-.05-.52-.11-.56A2.37,2.37,0,0,0,3.83,0S2.68-.08,2.52.42c.22,0,.6,0,.45,1.5,0,.07-.18.71-.71-.15C2.12,1.56,1.61.27,1.43.27A4.06,4.06,0,0,0,0,.34c-.19.11.26,1,1,2.17a3.56,3.56,0,0,0,2.4,1.91,2.78,2.78,0,0,0,.94,0c.12-.06,0-.9.38-1,.18,0,.86.87,1.12,1a2.69,2.69,0,0,0,.86.08c.39,0,.82,0,.86-.23.09-.58-1.16-1.33-1.2-1.69s.46-.73.71-1.09S7.77.51,7.58.34Z" />
+										</g>
+									</svg>
+								a.social-block__item._order-block._inst(href="#")
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.39 7.39">
+										<g>
+											<path class="cls-1" d="M2.1.63A1.47,1.47,0,0,0,.63,2.1V5.29A1.47,1.47,0,0,0,2.1,6.76H5.29A1.47,1.47,0,0,0,6.76,5.29V2.1A1.47,1.47,0,0,0,5.29.63ZM5.29,7.39H2.1A2.11,2.11,0,0,1,0,5.29V2.1A2.11,2.11,0,0,1,2.1,0H5.29a2.11,2.11,0,0,1,2.1,2.1V5.29A2.11,2.11,0,0,1,5.29,7.39Z" />
+											<path class="cls-1" d="M3.7,2.44A1.26,1.26,0,1,0,5,3.7,1.26,1.26,0,0,0,3.7,2.44Zm0,3.15A1.89,1.89,0,1,1,5.59,3.7,1.89,1.89,0,0,1,3.7,5.59Z" />
+											<path class="cls-1" d="M6.12,1.7a.45.45,0,1,1-.45-.45A.45.45,0,0,1,6.12,1.7Z" />
+										</g>
+									</svg>
+							
+
+
+
+			
+		include includes/scripts.pug

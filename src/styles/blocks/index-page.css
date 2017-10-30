@@ -1,0 +1,11 @@
+.index-page {
+	position: relative;
+/*	background-image: resolve('index-bg.svg');
+	background-position: 50% 100%;
+	background-size: 965px;
+	background-repeat: no-repeat;*/
+
+	&__wrapper {
+		height: 100vh;
+	}
+}
