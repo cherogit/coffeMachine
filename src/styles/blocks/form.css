@@ -1,0 +1,15 @@
+.form {
+
+	&__submit {
+		display: block;
+		margin-right: 45px;
+		margin-left: auto;
+		padding: 0 28px;
+		border: 6px solid white;
+		text-transform: uppercase;
+		font: 19px/40px var(--fspBold);
+		color: white;
+		background: #de806a;
+		cursor: pointer;
+	}
+}

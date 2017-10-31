@@ -56,8 +56,7 @@ html(lang="ru")
 								input(type="text" placeholder="Фамилия")
 								input(type="text" placeholder="Имя")
 							a.btn._order(href="#secondPage") Заказать кофе
-
-				.section
+				.section._type
 					.type-coffee
 						.type-coffee__wrapper.container
 							h2.h2 Выберите тип кофе
@@ -94,8 +93,7 @@ html(lang="ru")
 									input(id="type8" type="radio" name="type-coffee")
 									label(for="type8") 
 										span Americano
-
-				.section
+				.section._mug
 					.mug-size
 						.mug-size__wrapper.container
 							h2.h2 Размер кружки кофе
@@ -112,12 +110,11 @@ html(lang="ru")
 									input(id="mug-size3" type="radio" name="mug-size")
 									label(for="mug-size3") 
 										span Большая
-
-				.section
+				.section._sugar
 					.sugar
 						.sugar__wrapper.container
 							h2.h2._mb20 Сахар
-							h3.h3._mb100 Укажите количество сахара
+							h3.h3._mbig Укажите количество сахара
 							.sugar__list
 								.sugar__list-item._without
 									input(id="sugar1" type="radio" name="sugar")
@@ -149,7 +146,7 @@ html(lang="ru")
 										span Две ложки 
 											br
 											| сахара
-				.section
+				.section._topping
 					.topping
 						.topping__wrapper.container
 							h2.h2._mb20 Топпинг
@@ -193,13 +190,11 @@ html(lang="ru")
 												<path class="cls-1" d="M0.21,0.22A0.73,0.73,0,0,0,0,.75a0.74,0.74,0,0,0,.22.53h0L2.76,3.82,5.31,1.27h0A0.76,0.76,0,0,0,5.47,1h0A0.74,0.74,0,0,0,5.52.75,0.73,0.73,0,0,0,5.31.22,0.76,0.76,0,0,0,5.06.06h0A0.77,0.77,0,0,0,4.77,0a0.73,0.73,0,0,0-.52.22L3.12,1.36h0a0.5,0.5,0,0,1-.35.15h0a0.5,0.5,0,0,1-.35-0.15h0L1.27,0.22h0A0.73,0.73,0,0,0,.75,0,0.76,0.76,0,0,0,.46.06h0A0.76,0.76,0,0,0,.21.22Z" transform="translate(0 0)" />
 											</g>
 										</svg>
-
-
-				.section
+				.section._cream
 					.cream
 						.cream__wrapper.container
 							h2.h2._white._mb20 Сливки
-							h3.h3._white._mb100 Выберите количество сливок
+							h3.h3._white Выберите количество сливок
 							.cream__list
 								.cream__list-item._without
 									input(id="cream1" type="radio" name="cream")
@@ -213,11 +208,13 @@ html(lang="ru")
 									input(id="cream3" type="radio" name="cream")
 									label(for="cream3") 
 										span Две порции
+							button.form__submit(type="submit") Готово
 				.section._order
 					.order
 						.container
 							.order__wrapper
 								.order__info
+									.order__info-title Ваш текущий заказ:
 									.order__info-list
 										.order__info-item._cream
 											span Одна порция 

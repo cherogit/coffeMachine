@@ -1,4 +1,53 @@
 .section {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: calc(50% + 190px);
+		transform: translate(-50%, 0);
+		display: block;
+		width: 200px;
+		height: 180px;
+	}
+
+	&._type {
+		&:before {
+			content: '';
+			background: resolve('kofe-01.svg') center/cover no-repeat;
+		}
+	}
+
+	&._mug {
+		&:before {
+			content: '';
+			background: resolve('kofe-02.svg') center/cover no-repeat;
+		}
+	}
+
+	&._sugar {
+		&:before {
+			content: '';
+			background: resolve('kofe-03.svg') center/cover no-repeat;
+		}
+	}
+
+	&._topping {
+		&:before {
+			content: '';
+			background: resolve('kofe-04.svg') center/cover no-repeat;
+		}
+	}
+
+	&._cream {
+		&:before {
+			content: '';
+			background: resolve('kofe-05.svg') center/cover no-repeat;
+		}
+	}
+
+
 	&._order {
 		&.active {
 			.order__info-item {
