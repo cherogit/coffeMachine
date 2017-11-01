@@ -29,8 +29,12 @@ html(lang="ru")
 					.index-page
 						.index-page__wrapper.container
 							header.header
-								a.main-logo(href="/")
-									img(src="./assets/images/img/logo.svg", alt="")
+								.header__wrapper
+									a.main-logo(href="/")
+										img(src="./assets/images/img/logo.svg", alt="")
+									.author-fields
+										input(type="text" placeholder="Фамилия")
+										input(type="text" placeholder="Имя")
 								.social-block
 									a.social-block__item._fb(href="#")
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3.26 6.98">
@@ -52,9 +56,7 @@ html(lang="ru")
 												<path class="cls-1" d="M6.12,1.7a.45.45,0,1,1-.45-.45A.45.45,0,0,1,6.12,1.7Z" />
 											</g>
 										</svg>
-							.author-fields
-								input(type="text" placeholder="Фамилия")
-								input(type="text" placeholder="Имя")
+							
 							a.btn._order(href="#secondPage") Заказать кофе
 				.section._type
 					.type-coffee

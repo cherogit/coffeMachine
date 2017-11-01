@@ -2,6 +2,7 @@
 	display: inline-block;
 	max-width: 350px;
 	width: 100%;
+	margin: 0 0 25px 0;
 	font-size: 0;
 
 	img {
