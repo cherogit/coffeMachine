@@ -2,5 +2,9 @@
 	
 	--fspBook: 'Fedra-Sans-Pro-Book', 'Arial', sans-serif;
 	--fspBold: 'FedraSansPro-Bold', 'Arial', sans-serif;
-	
+
+	@custom-media --mobile screen and (width >= 480px);
+	@custom-media --tablet screen and (width >= 700px);
+	@custom-media --laptop screen and (width >= 1024px);
+	@custom-media --desktop screen and (width >= 1200px);
 }

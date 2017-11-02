@@ -2,8 +2,6 @@
 
 	&__submit {
 		display: block;
-		margin-right: 45px;
-		margin-left: auto;
 		padding: 0 28px;
 		border: 6px solid white;
 		text-transform: uppercase;
@@ -11,5 +9,16 @@
 		color: white;
 		background: #de806a;
 		cursor: pointer;
+
+		@media (--tablet) {
+			margin: 0 auto;
+			font-size: 22px;
+		}
+
+		@media (--laptop) {
+			margin-right: 45px;
+			margin-left: auto;
+			font-size: 19px;
+		}
 	}
 }

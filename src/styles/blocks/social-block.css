@@ -3,6 +3,17 @@
 	align-items: center;
 	justify-content: center;
 
+	@media (--tablet) {
+		position: absolute;
+		top: 60px;
+		right: 25px;
+	}
+
+	@media (--laptop) {
+		position: relative;
+		right: 0;
+	}
+
 	&__item {
 		display: inline-flex;
 		justify-content: center;

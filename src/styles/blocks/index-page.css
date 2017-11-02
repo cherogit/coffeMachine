@@ -5,8 +5,22 @@
 	background-size: 965px;
 	background-repeat: no-repeat;
 
+	@media (--tablet) {
+		background-position: calc(0 + 40px) 100%;
+		background-size: 915px;
+	}
+
+	@media (--laptop) {
+		background-position: calc(50% + 40px) 100%;
+		background-size: 965px;
+	}
+
 	&__wrapper {
 		height: 100vh;
 		padding-top: 50px;
+
+		@media (--tablet) {
+			padding-top: 160px;
+		}
 	}
 }

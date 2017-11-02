@@ -5,6 +5,14 @@
 	width: 25%;
 	padding: 35px 0 50px 0;
 
+	@media (--tablet) {
+		width: 50%;
+	}
+
+	@media (--laptop) {
+		width: 25%;
+	}
+
 	&__minus, &__plus {
 		position: absolute;
 		left: 50%;

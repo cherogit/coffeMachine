@@ -44,11 +44,20 @@ a {
 }
 
 .container {
-	max-width: 740px;
+	max-width: 245px;
 	height: 100vh;
 	margin: 0 auto;
 	padding: 50px 15px;
-	padding-top: 100px;
+	border: 1px solid black;
+
+	@media (--tablet) {
+		max-width: 400px;
+	}
+
+	@media (--laptop) {
+		max-width: 740px;
+		padding-top: 100px;
+	}
 }
 
 .clear {
@@ -65,6 +74,16 @@ h2.h2 {
 	font: 30px/34px var(--fspBold);
 	color: black;
 
+	@media (--tablet) {
+		width: 275px;
+		margin-bottom: 50px;
+	}
+
+	@media (--laptop) {
+		width: auto;
+		margin-bottom: 100px;
+	}
+
 	&._white {
 		color: white;
 	}
@@ -78,6 +97,14 @@ h3.h3 {
 	margin: 0 0 35px 0;
 	font: 24px/34px var(--fspBook);
 	color: black;
+
+	@media (--tablet) {
+		width: 275px;
+	}
+
+	@media (--laptop) {
+		width: auto;
+	}
 
 	&._white {
 		color: white;

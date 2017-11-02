@@ -8,10 +8,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 0 90px 0;
+
+		@media (--tablet) {
+			margin-bottom: 0;
+		}
+
+		@media (--laptop) {
+			margin-bottom: 90px;
+		}
 	}
 
 	&__list-item {
 		width: 33%;
+
+		@media (--tablet) {
+			width: 100%;
+			margin: 0 0 25px 0;
+		}
+
+		@media (--laptop) {
+			width: 33%;
+			margin-bottom: 0;
+		}
 
 		&._without {
 			label {

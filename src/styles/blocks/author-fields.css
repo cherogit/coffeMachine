@@ -3,6 +3,14 @@
 	flex-direction: column;
 	margin: 0 0 25px 0;
 
+	@media (--tablet) {
+		margin-bottom: 50px;
+	}
+
+	@media (--laptop) {
+		margin-bottom: 25px;
+	}
+
 	input {
 		width: 245px;
 		height: 35px;
@@ -12,6 +20,19 @@
 		font: 18px/24px var(--fspBook);
 		color: black;
 		background: white;
+
+		@media (--tablet) {
+			width: 350px;
+			font-size: 24px;
+			height: 50px;
+		}
+
+		@media (--laptop) {
+			width: 245px;
+			height: 35px;
+			font-size: 18px;
+		}
+
 
 		&:last-child {
 			margin-bottom: 0;

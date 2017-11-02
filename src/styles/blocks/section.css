@@ -10,6 +10,14 @@
 		display: block;
 		width: 200px;
 		height: 180px;
+
+		@media (--tablet) {
+			left: calc(50% + 255px);
+		}
+
+		@media (--laptop) {
+			left: calc(50% + 190px);
+		}
 	}
 
 	&._type {

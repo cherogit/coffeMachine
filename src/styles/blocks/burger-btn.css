@@ -1,13 +1,22 @@
 .burger-btn {
 	position: fixed;
-	top: 6.5vh;
-	left: 45px;
+	top: 50px;
+	left: 20px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
 	width: 60px;
 	height: 60px;
 	z-index: 9999;
+
+	@media (--tablet) {
+		left: 95px;
+	}
+
+	@media (--laptop) {
+		top: 6.5vh;
+		left: 45px;
+	}
 
 	&._active, &:hover {
 		svg {

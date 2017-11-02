@@ -2,12 +2,25 @@
 
 	&__list {
 		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
+
+		@media (--laptop) {
+			justify-content: flex-start;
+		}
 	}
 
 	&__list-item {
 		width: 25%;
 		margin: 0 0 30px 0;
+
+		@media (--tablet) {
+			width: 45%;
+		}
+
+		@media (--laptop) {
+			width: 25%;
+		}
 
 		&._espresso {
 			label {

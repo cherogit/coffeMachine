@@ -12,6 +12,14 @@
 	&__list-item {
 		width: 33%;
 
+		@media (--tablet) {
+			width: 100%;
+		}
+
+		@media (--laptop) {
+			width: 33%;
+		}
+
 		&._small {
 			label {
 				&:before {
@@ -56,6 +64,16 @@
 			display: block;
 			padding: 190px 10px 0 10px;
 			text-align: center;
+
+			@media (--tablet) {
+				margin-bottom: 50px;
+				padding-top: 180px;
+			}
+
+			@media (--laptop) {
+				margin-bottom: 0;
+				padding-top: 190px;
+			}
 
 			&:hover {
 				&:after {

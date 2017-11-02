@@ -9,6 +9,14 @@
 		width: 25%;
 		margin: 0 0 25px 0;
 
+		@media (--tablet) {
+			width: 50%;
+		}
+
+		@media (--laptop) {
+			width: 25%;
+		}
+
 		&._vanilla {
 			label {
 				&:before {
@@ -112,10 +120,26 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		@media (--tablet) {
+			justify-content: space-between;
+		}
+
+		@media (--laptop) {
+			justify-content: center;
+		}
 	}
 
 	&__quantity-item {
 		width: 25%;
+
+		@media (--tablet) {
+			width: 50%;
+		}
+
+		@media (--laptop) {
+			width: 25%;
+		}
 
 		&._without {
 			padding: 35px 0 0 0;
