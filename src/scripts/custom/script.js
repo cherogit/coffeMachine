@@ -21,6 +21,8 @@ $(function() {
 			'#4f404d'
 		],
 		scrollingSpeed: 600,
+		responsiveWidth: 768,
+		responsiveHeight: 637
 	});
 
 	$('.burger-btn').click(function() {
@@ -28,6 +30,10 @@ $(function() {
 		$('.navigation').toggleClass('_active');
 
 		return false;
+	});
+
+	$('.navigation__menu a').click(function() {
+		$('.navigation').removeClass('_active');
 	});
 
 	$(document).click(function(event) {

@@ -1,23 +1,27 @@
 .mug-size {
 
-	&__wrapper {
-
-	}
-
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	&__list-item {
-		width: 33%;
+		width: 100%;
+		margin-bottom: 20px;
+
+		@media (--mobile) {
+			width: 33%;
+			margin-bottom: 0;
+		}
 
 		@media (--tablet) {
 			width: 100%;
+			margin-bottom: 20px;
 		}
 
 		@media (--laptop) {
 			width: 33%;
+			margin-bottom: 0;
 		}
 
 		&._small {
@@ -62,12 +66,12 @@
 		label {
 			position: relative;
 			display: block;
-			padding: 190px 10px 0 10px;
+			padding: 130px 10px 0 10px;
 			text-align: center;
 
 			@media (--tablet) {
 				margin-bottom: 50px;
-				padding-top: 180px;
+				padding-top: 160px;
 			}
 
 			@media (--laptop) {
@@ -85,8 +89,13 @@
 
 			span {
 				display: block;
-				font: 18px/28px var(--fspBook);
+				font: 12px/18px var(--fspBook);
 				color: black;
+
+				@media (--tablet) {
+					font-size: 18px;
+					line-height: 28px;
+				}
 			}
 
 			&:before {
@@ -96,26 +105,48 @@
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
-				width: 150px;
-				height: 150px;
+				width: 105px;
+				height: 105px;
 				border-radius: 50%;
 				background-size: 100%;
 				background-position: center;
 				background-repeat: no-repeat;
+
+				@media (--tablet) {
+					width: 140px;
+					height: 140px;
+				}
+
+				@media (--laptop) {
+					width: 150px;
+					height: 150px;
+				}
 			}
 
 			&:after {
 				content: '';
 				position: absolute;
-				top: -20px;
+				top: -15px;
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
 				opacity: 0;
-				width: 195px;
-				height: 195px;
+				width: 135px;
+				height: 135px;
 				background: resolve('coffee-circle.svg') center/100% no-repeat;
 				transition: 400ms;
+
+				@media (--tablet) {
+					top: -15px;
+					width: 175px;
+					height: 175px;
+				}
+
+				@media (--laptop) {
+					top: -20px;
+					width: 195px;
+					height: 195px;
+				}
 			}
 		}
 	}

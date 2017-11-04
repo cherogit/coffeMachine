@@ -6,8 +6,12 @@
 	}
 
 	&__list-item {
-		width: 25%;
+		width: 50%;
 		margin: 0 0 25px 0;
+
+		@media (--mobile) {
+			width: 25%;
+		}
 
 		@media (--tablet) {
 			width: 50%;
@@ -68,8 +72,16 @@
 		label {
 			position: relative;
 			display: block;
-			padding: 150px 10px 0 10px;
+			padding: 105px 10px 0 10px;
 			text-align: center;
+
+			@media (--tablet) {
+				padding-top: 130px;
+			}
+
+			@media (--laptop) {
+				padding-top: 150px;
+			}
 
 			&:hover {
 				&:after {
@@ -81,8 +93,13 @@
 
 			span {
 				display: block;
-				font: 18px/28px var(--fspBook);
+				font: 13.5px/20px var(--fspBook);
 				color: black;
+
+				@media (--tablet) {
+					font-size: 18px;
+					line-height: 28px;
+				}
 			}
 
 			&:before {
@@ -92,26 +109,48 @@
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
-				width: 130px;
-				height: 130px;
+				width: 85px;
+				height: 85px;
 				border-radius: 50%;
 				background-size: 100%;
 				background-position: center;
 				background-repeat: no-repeat;
+
+				@media (--tablet) {
+					width: 110px;
+					height: 110px;
+				}
+
+				@media (--laptop) {
+					width: 130px;
+					height: 130px;
+				}
 			}
 
 			&:after {
 				content: '';
 				position: absolute;
-				top: -17px;
+				top: -12px;
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
 				opacity: 0;
-				width: 165px;
-				height: 165px;
+				width: 110px;
+				height: 110px;
 				background: resolve('coffee-circle.svg') center/100% no-repeat;
 				transition: 400ms;
+
+				@media (--tablet) {
+					top: -15px;
+					width: 140px;
+					height: 140px;
+				}
+
+				@media (--laptop) {
+					top: -17px;
+					width: 165px;
+					height: 165px;
+				}
 			}
 		}
 	}
@@ -119,7 +158,11 @@
 	&__quantity {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+
+		@media (--mobile) {
+			justify-content: center;
+		}
 
 		@media (--tablet) {
 			justify-content: space-between;
@@ -131,7 +174,11 @@
 	}
 
 	&__quantity-item {
-		width: 25%;
+		width: 50%;
+
+		@media (--mobile) {
+			width: 25%;
+		}
 
 		@media (--tablet) {
 			width: 50%;
@@ -167,8 +214,16 @@
 		label {
 			position: relative;
 			display: block;
-			padding: 150px 10px 0 10px;
+			padding: 120px 10px 0 10px;
 			text-align: center;
+
+			@media (--tablet) {
+				padding-top: 130px;
+			}
+
+			@media (--laptop) {
+				padding-top: 150px;
+			}
 
 			&:hover {
 				&:after {
@@ -179,9 +234,13 @@
 			}
 
 			span {
-				display: block;
+				display: none;
 				font: 18px/28px var(--fspBook);
 				color: black;
+
+				@media (--tablet) {
+					display: block;
+				}
 			}
 
 			&:before {
@@ -191,26 +250,47 @@
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
-				width: 130px;
-				height: 130px;
+				width: 85px;
+				height: 85px;
 				border-radius: 50%;
 				background-size: 100%;
 				background-position: center;
 				background-repeat: no-repeat;
+
+				@media (--tablet) {
+					width: 110px;
+					height: 110px;
+				}
+
+				@media (--laptop) {
+					width: 130px;
+					height: 130px;
+				}
 			}
 
 			&:after {
 				content: '';
 				position: absolute;
-				top: -17px;
+				top: -12px;
 				left: 50%;
 				transform: translate(-50%, 0);
 				display: block;
 				opacity: 0;
-				width: 165px;
-				height: 165px;
+				width: 110px;
+				height: 110px;
 				background: resolve('coffee-circle.svg') center/100% no-repeat;
 				transition: 400ms;
+
+				@media (--tablet) {
+					top: -15px;
+					width: 140px;
+					height: 140px;
+				}
+
+				@media (--laptop) {
+					width: 165px;
+					height: 165px;
+				}
 			}
 		}
 	}

@@ -7,11 +7,12 @@
 		top: 0;
 		left: calc(50% + 190px);
 		transform: translate(-50%, 0);
-		display: block;
+		display: none;
 		width: 200px;
 		height: 180px;
 
 		@media (--tablet) {
+			display: block;
 			left: calc(50% + 255px);
 		}
 

@@ -1,16 +1,19 @@
 .social-block {
+	position: absolute;
+	top: 25px;
+	right: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	@media (--tablet) {
-		position: absolute;
-		top: 60px;
+		top: 10px;
 		right: 25px;
 	}
 
 	@media (--laptop) {
 		position: relative;
+		top: 0;
 		right: 0;
 	}
 
@@ -18,10 +21,16 @@
 		display: inline-flex;
 		justify-content: center;
 		align-items: center;
-		width: 45px;
-		height: 45px;
-		margin: 0 20px 0 0;
+		width: 30px;
+		height: 30px;
+		margin: 0 15px 0 0;
 		border-radius: 50%;
+
+		@media (--tablet) {
+			width: 45px;
+			height: 45px;
+			margin-right: 20px;
+		}
 
 		&:last-child {
 			margin-right: 0;
@@ -58,8 +67,13 @@
 			background: #3ba2ad;
 
 			svg {
-				width: 13px;
-				height: 27px;
+				width: 9px;
+				height: 20px;
+
+				@media (--tablet) {
+					width: 13px;
+					height: 27px;
+				}
 			}
 		}
 
@@ -67,8 +81,13 @@
 			background: #2e858f;
 
 			svg {
-				width: 30px;
-				height: 17px;
+				width: 21px;
+				height: 12px;
+
+				@media (--tablet) {
+					width: 30px;
+					height: 17px;
+				}
 			}
 		}
 
@@ -76,8 +95,13 @@
 			background: #c34844;
 
 			svg {
-				width: 28px;
-				height: 28px;
+				width: 21px;
+				height: 21px;
+
+				@media (--tablet) {
+					width: 28px;
+					height: 28px;
+				}
 			}
 		}
 

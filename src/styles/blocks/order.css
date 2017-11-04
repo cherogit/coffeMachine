@@ -1,10 +1,20 @@
 .order {
 
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 50px;
+	}
+
 	.social-block {
 		position: relative;
 		top: 0;
 		left: 0;
-		margin-bottom: 100px;
+		margin-bottom: 50px;
+
+		@media (--tablet) {
+			margin-bottom: 100px;
+		}
 	}
 
 	&__wrapper {
@@ -12,13 +22,15 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		margin: 0 0 135px 0;
+		margin: 0 0 100px 0;
+		padding: 50px 0 0 0;
 
 		@media (--tablet) {
 			height: calc(100vh - 200px);
 			flex-direction: column;
 			justify-content: center;
 			margin-bottom: 0;
+			padding: 0;
 		}
 
 		@media (--laptop) {
@@ -31,14 +43,21 @@
 
 	&__info {
 		position: relative;
-		width: 440px;
-		height: 400px;
+		width: 100%;
+		height: 310px;
 		padding: 0 235px 0 0;
+		margin-bottom: 80px;
+
+		@media (--mobile) {
+			flex-basis: 350px;
+			margin: 0 auto 80px auto;
+		}
 
 		@media (--tablet) {
+			flex-basis: auto;
 			width: 100%;
 			height: 360px;
-			margin-bottom: 100px;
+			margin-bottom: 70px;
 			padding-right: 215px;
 		}
 
@@ -54,7 +73,7 @@
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 205px;
+			width: 160px;
 			height: 100%;
 			background: resolve('zakaz.svg') no-repeat;
 			background-size: 100%;
@@ -71,11 +90,11 @@
 
 		&-title {
 			position: absolute;
-			top: 85px;
+			top: 50px;
 			right: -25px;
 			width: 220px;
 			text-align: center;
-			font: 30px/34px var(--fspBold);
+			font: 22px/26px var(--fspBold);
 			color: white;
 
 			@media (--tablet) {
@@ -94,18 +113,27 @@
 		position: absolute;
 		bottom: 12px;
 		right: 0;
-		width: 300px;
+		width: 250px;
 		z-index: 1;
+
+		@media (--tablet) {
+			width: 300px;
+		}
 	}
 
 	&__info-item {
 		position: relative;
-		margin: 0 0 20px 0;
+		margin: 0 0 10px 0;
 		padding: 0 0 3px 0;
 		text-align: right;
-		font: 17px/21px var(--fspBook);
+		font: 13px/21px var(--fspBook);
 		color: white;
 		transition: 400ms;
+
+		@media (--tablet) {
+			margin-bottom: 20px;
+			font-size: 17px;
+		}
 
 		&._cream, &._topping, &._mug, &._sugar, &._coffee {
 			opacity: 0;
@@ -128,43 +156,53 @@
 	}
 
 	&__queue {
-		max-width: 180px;
-		width: 100%;
+		display: inline-flex;
+		justify-content: center;
+		margin: 0 auto;
 
 		@media (--tablet) {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			max-width: 100%;
 		}
 
 		@media (--laptop) {
 			display: block;
-			max-width: 180px;
+			flex-basis: 180px;
 		}
 
 		span {
 			display: block;
-			width: 150px;
-			height: 90px;
+			width: 90px;
+			height: 50px;
 			padding: 0 10px;
-			border-radius: 25px;
+			border-radius: 15px;
 			text-align: center;
-			font: 70px/90px var(--fspBold);
+			font: 42px/50px var(--fspBold);
 			color: black;
 			background: white;
+
+			@media (--tablet) {
+				width: 150px;
+				height: 90px;
+				border-radius: 25px;
+				font-size: 70px;
+				line-height: 90px;
+			}
 		}
 	}
 
 	&__queue-title {
 		display: inline-block;
-		margin: 0 0 70px 0;
-		font: 30px/34px var(--fspBold);
+		max-width: 140px;
+		margin-right: 30px;
+		font: 22px/26px var(--fspBold);
 		color: white;
 
 		@media (--tablet) {
 			max-width: 190px;
-			margin-bottom: 0;
+			font-size: 30px;
+			line-height: 34px;
 		}
 
 		@media (--laptop) {

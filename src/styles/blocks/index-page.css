@@ -1,8 +1,8 @@
 .index-page {
 	position: relative;
 	background-image: resolve('index-bg.svg');
-	background-position: calc(50% + 40px) 100%;
-	background-size: 965px;
+	background-position: calc(50% + 20px) 100%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 
 	@media (--tablet) {
@@ -16,11 +16,19 @@
 	}
 
 	&__wrapper {
-		height: 100vh;
 		padding-top: 50px;
+		padding-bottom: 200px;
 
 		@media (--tablet) {
+			height: 90vh;
+			margin-top: 5vh;
 			padding-top: 160px;
+			padding-bottom: 0;
+		}
+
+		@media (--laptop) {
+			height: 100vh;
+			margin-top: 0;
 		}
 	}
 }

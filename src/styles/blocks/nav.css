@@ -10,13 +10,20 @@
 	align-items: flex-start;
 	flex-wrap: wrap;
 	padding: 19.5vh 0;
-	background: rgba(80, 50, 50, .41);
+	background: rgba(80, 50, 50, .85);
+	overflow-y: auto;
 	transition: 400ms;
 	z-index: 999;
 
+	@media (--mobile) {
+		padding: 25px 0;
+	}
+
 	@media (--tablet) {
 		width: 190px;
+		padding: 19.5vh 0;
 		padding-top: 150px;
+		background: rgba(80, 50, 50, .41);
 	}
 
 	@media (--laptop) {

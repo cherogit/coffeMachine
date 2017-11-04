@@ -2,17 +2,20 @@
 
 	&__submit {
 		display: block;
-		padding: 0 28px;
-		border: 6px solid white;
+		margin: 0 auto 25px auto;
+		padding: 0 20px;
 		text-transform: uppercase;
-		font: 19px/40px var(--fspBold);
+		font: 13px/30px var(--fspBold);
 		color: white;
 		background: #de806a;
 		cursor: pointer;
 
 		@media (--tablet) {
-			margin: 0 auto;
+			margin-bottom: 0;
+			padding: 0 28px;
+			border: 6px solid white;
 			font-size: 22px;
+			line-height: 40px;
 		}
 
 		@media (--laptop) {

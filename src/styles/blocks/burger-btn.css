@@ -1,16 +1,19 @@
 .burger-btn {
 	position: fixed;
-	top: 50px;
+	top: 20px;
 	left: 20px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	z-index: 9999;
 
 	@media (--tablet) {
-		left: 95px;
+		top: 50px;
+		left: 65px;
+		width: 60px;
+		height: 60px;
 	}
 
 	@media (--laptop) {
